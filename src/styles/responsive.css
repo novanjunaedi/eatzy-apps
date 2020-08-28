@@ -1,0 +1,153 @@
+.restaurants {
+    display: grid;
+    grid-row-gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .restaurant-item__not__found {
+    text-align: left;
+    margin-left: 20%;
+    font-size: 25px;
+    font-weight: 250;
+  }
+}
+
+@media (min-width: 1024px) {
+  .restaurant-item__not__found {
+    text-align: left;
+    margin-left: 20%;
+    font-size: 25px;
+    font-weight: 250;
+    padding-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 649px){
+    .app-bar .app-bar__navigation {
+      position: absolute;
+      top: 50px;
+      left: -280px;
+      width: 250px;
+      height: 100vh;
+      transition: all 0.3s;
+      padding: 8px;
+      background-color: white;
+      overflow: hidden;
+      -webkit-box-shadow: 10px 6px 7px -8px rgba(0,0,0,0.48);
+      -moz-box-shadow: 10px 6px 7px -8px rgba(0,0,0,0.48);
+      box-shadow: 10px 6px 7px -8px rgba(0,0,0,0.48);
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      min-height: 400px;
+      width: 100%;
+      text-align: center;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/heros/hero-image_2-small.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: brightness(100%);
+    }
+
+    .input-resto {
+      border: 2px solid black;
+      border-radius: 4px;
+      width: 100%;
+      height: 40px;
+      margin-top: 20px;
+      margin-bottom : 20px;
+      padding-left: 20px;
+    }
+}
+
+
+@media screen and (min-width: 650px) {
+  .app-bar {
+      grid-template-columns: 1fr auto;
+      padding: 8px 32px;
+  }
+ 
+  .app-bar .app-bar__brand h1 {
+      font-size: 1.5em;
+  }
+ 
+  .app-bar .app-bar__menu {
+      display: none;
+  }
+ 
+  .app-bar .app-bar__navigation {
+      position: static;
+      width: 100%;
+  }
+ 
+  .app-bar .app-bar__navigation ul li {
+      display: inline-block;
+  }
+ 
+  .app-bar .app-bar__navigation ul li a {
+      display: inline-block;
+      width: 120px;
+      text-align: center;
+      margin: 0;
+  }
+
+  .restaurant__poster {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border: 0;
+      border-radius: 10px;
+    }
+}
+ 
+@media screen and (min-width: 800px) {
+  .app-bar .app-bar__brand h1 {
+      font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 650px) {
+    .post-item__content {
+        padding: 16px 32px 32px 32px;
+    }
+
+    .restaurant__name {
+        font-size: 18px;
+    }
+
+    .header {
+      text-align: center;
+      font-size: 35px;
+      font-weight: 500;
+    }
+
+    .post-item__description {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .restaurants {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 16px;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .restaurants {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 1200px;
+    }
+}
